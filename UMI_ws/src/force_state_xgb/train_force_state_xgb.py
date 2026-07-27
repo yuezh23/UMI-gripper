@@ -312,20 +312,27 @@ def train(
         ascending=False,
     )
 
-    top_k = min(
-        args.top_k,
-        len(importance),
-    )
+    if args.top_k <= 0:
+        usable = importance["feature"].tolist()
+    else:
+        top_k = min(
+            args.top_k,
+            len(importance),
+        )
+        usable = (
+            importance
+            .head(top_k)["feature"]
+            .tolist()
+        )
 
-    usable = (
-        importance
-        .head(top_k)["feature"]
-        .tolist()
-    )
-
-    print(
-        f"{modality}: selected top-{len(usable)} features"
-    )
+    if args.top_k <= 0:
+        print(
+            f"{modality}: using all {len(usable)} features"
+        )
+    else:
+        print(
+            f"{modality}: selected top-{len(usable)} features"
+        )
 
     # Save the feature-selection result for this LOO fold.
     importance.to_csv(
@@ -667,6 +674,52 @@ def main() -> None:
         / "metrics_summary.csv",
         index=False,
     )
+
+    # Compute mean normalized confusion matrix across LOO folds
+    for modality in modalities:
+        matrices = []
+
+        for row in summary:
+            if row["modality"] != modality:
+                continue
+
+            cm = np.array(
+                row["confusion_matrix"],
+                dtype=float,
+            )
+
+            row_sum = cm.sum(axis=1, keepdims=True)
+
+            cm_norm = np.divide(
+                cm,
+                row_sum,
+                out=np.zeros_like(cm),
+                where=row_sum != 0,
+            )
+
+            matrices.append(cm_norm)
+
+        mean_cm = np.mean(matrices, axis=0)
+
+        pd.DataFrame(
+            mean_cm,
+            index=LABELS,
+            columns=LABELS,
+        ).to_csv(
+            args.output_dir
+            / f"average_confusion_matrix_{modality}.csv"
+        )
+
+        print(
+            f"\nAverage normalized confusion matrix - {modality}"
+        )
+        print(
+            pd.DataFrame(
+                mean_cm,
+                index=LABELS,
+                columns=LABELS,
+            ).round(3)
+        )
 
 
 if __name__ == "__main__":
