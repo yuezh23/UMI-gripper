@@ -1,0 +1,34 @@
+{
+  "fold": "test_foam_brick",
+  "modality": "combined",
+  "train_samples": 213,
+  "val_samples": 40,
+  "test_samples": 53,
+  "train_episodes": 213,
+  "val_episodes": 40,
+  "test_episodes": 53,
+  "best_epoch": 8,
+  "train_accuracy": 0.6384976525821596,
+  "train_macro_f1": 0.6179076561159264,
+  "val_accuracy": 0.575,
+  "val_macro_f1": 0.5838095238095238,
+  "test_accuracy": 0.6415094339622641,
+  "test_macro_f1": 0.6269157088122606,
+  "confusion_matrix": [
+    [
+      17,
+      0,
+      0
+    ],
+    [
+      10,
+      7,
+      3
+    ],
+    [
+      4,
+      2,
+      10
+    ]
+  ]
+}

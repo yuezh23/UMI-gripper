@@ -1,0 +1,34 @@
+{
+  "fold": "test_paper_cup",
+  "modality": "combined",
+  "train_samples": 236,
+  "val_samples": 44,
+  "test_samples": 26,
+  "train_episodes": 236,
+  "val_episodes": 44,
+  "test_episodes": 26,
+  "best_epoch": 9,
+  "train_accuracy": 0.6440677966101694,
+  "train_macro_f1": 0.6308944793850454,
+  "val_accuracy": 0.6136363636363636,
+  "val_macro_f1": 0.6053671537542505,
+  "test_accuracy": 0.5384615384615384,
+  "test_macro_f1": 0.4832451499118166,
+  "confusion_matrix": [
+    [
+      8,
+      3,
+      0
+    ],
+    [
+      7,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      6
+    ]
+  ]
+}

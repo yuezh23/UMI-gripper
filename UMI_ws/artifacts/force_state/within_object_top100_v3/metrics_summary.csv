@@ -1,0 +1,4 @@
+fold,modality,accuracy,macro_f1,test_episodes,features
+within_object,force,0.7291666666666666,0.7244744744744746,48,100
+within_object,gelsight,0.6875,0.6813186813186815,48,100
+within_object,combined,0.7083333333333334,0.6980976013234078,48,100

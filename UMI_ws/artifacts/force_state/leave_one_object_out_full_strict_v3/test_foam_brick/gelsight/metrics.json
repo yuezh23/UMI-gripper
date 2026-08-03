@@ -1,0 +1,62 @@
+{
+  "modality": "gelsight",
+  "accuracy": 0.41509433962264153,
+  "train_accuracy": 0.9906103286384976,
+  "validation_accuracy": 0.675,
+  "macro_f1": 0.38888888888888884,
+  "classification_report": {
+    "too_low": {
+      "precision": 0.56,
+      "recall": 0.8235294117647058,
+      "f1-score": 0.6666666666666666,
+      "support": 17.0
+    },
+    "fine": {
+      "precision": 0.25,
+      "recall": 0.15,
+      "f1-score": 0.1875,
+      "support": 20.0
+    },
+    "too_high": {
+      "precision": 0.3125,
+      "recall": 0.3125,
+      "f1-score": 0.3125,
+      "support": 16.0
+    },
+    "accuracy": 0.41509433962264153,
+    "macro avg": {
+      "precision": 0.3741666666666667,
+      "recall": 0.4286764705882353,
+      "f1-score": 0.38888888888888884,
+      "support": 53.0
+    },
+    "weighted avg": {
+      "precision": 0.3683018867924529,
+      "recall": 0.41509433962264153,
+      "f1-score": 0.37893081761006286,
+      "support": 53.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      14,
+      2,
+      1
+    ],
+    [
+      7,
+      3,
+      10
+    ],
+    [
+      4,
+      7,
+      5
+    ]
+  ],
+  "train_episodes": 213,
+  "validation_episodes": 40,
+  "test_episodes": 53,
+  "candidate_features": 144,
+  "features": 144
+}

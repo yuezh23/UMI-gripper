@@ -1,0 +1,62 @@
+{
+  "modality": "combined",
+  "accuracy": 0.6923076923076923,
+  "train_accuracy": 0.9915254237288136,
+  "validation_accuracy": 0.75,
+  "macro_f1": 0.6103703703703703,
+  "classification_report": {
+    "too_low": {
+      "precision": 0.6428571428571429,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.72,
+      "support": 11.0
+    },
+    "fine": {
+      "precision": 0.5,
+      "recall": 0.14285714285714285,
+      "f1-score": 0.2222222222222222,
+      "support": 7.0
+    },
+    "too_high": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 8.0
+    },
+    "accuracy": 0.6923076923076923,
+    "macro avg": {
+      "precision": 0.6476190476190476,
+      "recall": 0.6536796536796537,
+      "f1-score": 0.6103703703703703,
+      "support": 26.0
+    },
+    "weighted avg": {
+      "precision": 0.6527472527472529,
+      "recall": 0.6923076923076923,
+      "f1-score": 0.6379487179487179,
+      "support": 26.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      9,
+      1,
+      1
+    ],
+    [
+      5,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      8
+    ]
+  ],
+  "train_episodes": 236,
+  "validation_episodes": 44,
+  "test_episodes": 26,
+  "candidate_features": 320,
+  "features": 320
+}

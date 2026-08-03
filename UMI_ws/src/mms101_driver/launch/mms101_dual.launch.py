@@ -10,7 +10,7 @@ def generate_launch_description():
         'port1', default_value='/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DK0DNDXM-if00-port0', description='Serial port for MMS101 #1'
     )
     port2_arg = DeclareLaunchArgument(
-        'port2', default_value='/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_D2019A8H-if00-port0', description='Serial port for MMS101 #2'
+        'port2', default_value='/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_D20KA4AS-if00-port0', description='Serial port for MMS101 #2'
     )
     frame1_arg = DeclareLaunchArgument(
         'frame1', default_value='ft_sensor_left', description='frame_id for MMS101 #1'

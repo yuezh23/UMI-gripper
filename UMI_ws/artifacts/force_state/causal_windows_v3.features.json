@@ -1,0 +1,1178 @@
+{
+  "window_sec": 1.0,
+  "pixel_threshold": 8.0,
+  "force_abs_limit": 10.0,
+  "gelsight_baseline_start_sec": 0.5,
+  "gelsight_baseline_end_sec": 3.0,
+  "rows": 306,
+  "episodes": 306,
+  "label_counts": {
+    "too_low": 106,
+    "fine": 105,
+    "too_high": 95
+  },
+  "force_features": [
+    "force_balance_absdiff_current",
+    "force_balance_absdiff_max",
+    "force_balance_absdiff_mean",
+    "force_balance_absdiff_slope",
+    "force_balance_ratio_current",
+    "force_balance_ratio_max",
+    "force_balance_ratio_mean",
+    "force_balance_ratio_slope",
+    "left_force_fx_current",
+    "left_force_fx_max",
+    "left_force_fx_mean",
+    "left_force_fx_min",
+    "left_force_fx_missing_ratio",
+    "left_force_fx_p95",
+    "left_force_fx_range",
+    "left_force_fx_slope",
+    "left_force_fx_std",
+    "left_force_fy_current",
+    "left_force_fy_max",
+    "left_force_fy_mean",
+    "left_force_fy_min",
+    "left_force_fy_missing_ratio",
+    "left_force_fy_p95",
+    "left_force_fy_range",
+    "left_force_fy_slope",
+    "left_force_fy_std",
+    "left_force_fz_current",
+    "left_force_fz_max",
+    "left_force_fz_mean",
+    "left_force_fz_min",
+    "left_force_fz_missing_ratio",
+    "left_force_fz_p95",
+    "left_force_fz_range",
+    "left_force_fz_slope",
+    "left_force_fz_std",
+    "left_force_norm_current",
+    "left_force_norm_delta_current",
+    "left_force_norm_delta_max",
+    "left_force_norm_delta_mean",
+    "left_force_norm_delta_min",
+    "left_force_norm_delta_missing_ratio",
+    "left_force_norm_delta_p95",
+    "left_force_norm_delta_range",
+    "left_force_norm_delta_slope",
+    "left_force_norm_delta_std",
+    "left_force_norm_max",
+    "left_force_norm_mean",
+    "left_force_norm_min",
+    "left_force_norm_missing_ratio",
+    "left_force_norm_p95",
+    "left_force_norm_range",
+    "left_force_norm_slope",
+    "left_force_norm_std",
+    "left_force_tx_current",
+    "left_force_tx_max",
+    "left_force_tx_mean",
+    "left_force_tx_min",
+    "left_force_tx_missing_ratio",
+    "left_force_tx_p95",
+    "left_force_tx_range",
+    "left_force_tx_slope",
+    "left_force_tx_std",
+    "left_force_ty_current",
+    "left_force_ty_max",
+    "left_force_ty_mean",
+    "left_force_ty_min",
+    "left_force_ty_missing_ratio",
+    "left_force_ty_p95",
+    "left_force_ty_range",
+    "left_force_ty_slope",
+    "left_force_ty_std",
+    "left_force_tz_current",
+    "left_force_tz_max",
+    "left_force_tz_mean",
+    "left_force_tz_min",
+    "left_force_tz_missing_ratio",
+    "left_force_tz_p95",
+    "left_force_tz_range",
+    "left_force_tz_slope",
+    "left_force_tz_std",
+    "left_torque_norm_current",
+    "left_torque_norm_delta_current",
+    "left_torque_norm_delta_max",
+    "left_torque_norm_delta_mean",
+    "left_torque_norm_delta_min",
+    "left_torque_norm_delta_missing_ratio",
+    "left_torque_norm_delta_p95",
+    "left_torque_norm_delta_range",
+    "left_torque_norm_delta_slope",
+    "left_torque_norm_delta_std",
+    "left_torque_norm_max",
+    "left_torque_norm_mean",
+    "left_torque_norm_min",
+    "left_torque_norm_missing_ratio",
+    "left_torque_norm_p95",
+    "left_torque_norm_range",
+    "left_torque_norm_slope",
+    "left_torque_norm_std",
+    "right_force_fx_current",
+    "right_force_fx_max",
+    "right_force_fx_mean",
+    "right_force_fx_min",
+    "right_force_fx_missing_ratio",
+    "right_force_fx_p95",
+    "right_force_fx_range",
+    "right_force_fx_slope",
+    "right_force_fx_std",
+    "right_force_fy_current",
+    "right_force_fy_max",
+    "right_force_fy_mean",
+    "right_force_fy_min",
+    "right_force_fy_missing_ratio",
+    "right_force_fy_p95",
+    "right_force_fy_range",
+    "right_force_fy_slope",
+    "right_force_fy_std",
+    "right_force_fz_current",
+    "right_force_fz_max",
+    "right_force_fz_mean",
+    "right_force_fz_min",
+    "right_force_fz_missing_ratio",
+    "right_force_fz_p95",
+    "right_force_fz_range",
+    "right_force_fz_slope",
+    "right_force_fz_std",
+    "right_force_norm_current",
+    "right_force_norm_delta_current",
+    "right_force_norm_delta_max",
+    "right_force_norm_delta_mean",
+    "right_force_norm_delta_min",
+    "right_force_norm_delta_missing_ratio",
+    "right_force_norm_delta_p95",
+    "right_force_norm_delta_range",
+    "right_force_norm_delta_slope",
+    "right_force_norm_delta_std",
+    "right_force_norm_max",
+    "right_force_norm_mean",
+    "right_force_norm_min",
+    "right_force_norm_missing_ratio",
+    "right_force_norm_p95",
+    "right_force_norm_range",
+    "right_force_norm_slope",
+    "right_force_norm_std",
+    "right_force_tx_current",
+    "right_force_tx_max",
+    "right_force_tx_mean",
+    "right_force_tx_min",
+    "right_force_tx_missing_ratio",
+    "right_force_tx_p95",
+    "right_force_tx_range",
+    "right_force_tx_slope",
+    "right_force_tx_std",
+    "right_force_ty_current",
+    "right_force_ty_max",
+    "right_force_ty_mean",
+    "right_force_ty_min",
+    "right_force_ty_missing_ratio",
+    "right_force_ty_p95",
+    "right_force_ty_range",
+    "right_force_ty_slope",
+    "right_force_ty_std",
+    "right_force_tz_current",
+    "right_force_tz_max",
+    "right_force_tz_mean",
+    "right_force_tz_min",
+    "right_force_tz_missing_ratio",
+    "right_force_tz_p95",
+    "right_force_tz_range",
+    "right_force_tz_slope",
+    "right_force_tz_std",
+    "right_torque_norm_current",
+    "right_torque_norm_delta_current",
+    "right_torque_norm_delta_max",
+    "right_torque_norm_delta_mean",
+    "right_torque_norm_delta_min",
+    "right_torque_norm_delta_missing_ratio",
+    "right_torque_norm_delta_p95",
+    "right_torque_norm_delta_range",
+    "right_torque_norm_delta_slope",
+    "right_torque_norm_delta_std",
+    "right_torque_norm_max",
+    "right_torque_norm_mean",
+    "right_torque_norm_min",
+    "right_torque_norm_missing_ratio",
+    "right_torque_norm_p95",
+    "right_torque_norm_range",
+    "right_torque_norm_slope",
+    "right_torque_norm_std",
+    "torque_balance_absdiff_current",
+    "torque_balance_absdiff_max",
+    "torque_balance_absdiff_mean",
+    "torque_balance_absdiff_slope",
+    "torque_balance_ratio_current",
+    "torque_balance_ratio_max",
+    "torque_balance_ratio_mean",
+    "torque_balance_ratio_slope"
+  ],
+  "gelsight_features": [
+    "gelsight_area_balance_absdiff_current",
+    "gelsight_area_balance_absdiff_max",
+    "gelsight_area_balance_absdiff_mean",
+    "gelsight_area_balance_absdiff_slope",
+    "gelsight_area_balance_ratio_current",
+    "gelsight_area_balance_ratio_max",
+    "gelsight_area_balance_ratio_mean",
+    "gelsight_area_balance_ratio_slope",
+    "gelsight_diff_balance_absdiff_current",
+    "gelsight_diff_balance_absdiff_max",
+    "gelsight_diff_balance_absdiff_mean",
+    "gelsight_diff_balance_absdiff_slope",
+    "gelsight_diff_balance_ratio_current",
+    "gelsight_diff_balance_ratio_max",
+    "gelsight_diff_balance_ratio_mean",
+    "gelsight_diff_balance_ratio_slope",
+    "left_gelsight_area_growth",
+    "left_gelsight_area_max",
+    "left_gelsight_area_mean",
+    "left_gelsight_area_stability",
+    "left_gelsight_center_x_current",
+    "left_gelsight_center_x_max",
+    "left_gelsight_center_x_mean",
+    "left_gelsight_center_x_min",
+    "left_gelsight_center_x_missing_ratio",
+    "left_gelsight_center_x_p95",
+    "left_gelsight_center_x_range",
+    "left_gelsight_center_x_slope",
+    "left_gelsight_center_x_std",
+    "left_gelsight_center_y_current",
+    "left_gelsight_center_y_max",
+    "left_gelsight_center_y_mean",
+    "left_gelsight_center_y_min",
+    "left_gelsight_center_y_missing_ratio",
+    "left_gelsight_center_y_p95",
+    "left_gelsight_center_y_range",
+    "left_gelsight_center_y_slope",
+    "left_gelsight_center_y_std",
+    "left_gelsight_contact_area_current",
+    "left_gelsight_contact_area_max",
+    "left_gelsight_contact_area_mean",
+    "left_gelsight_contact_area_min",
+    "left_gelsight_contact_area_missing_ratio",
+    "left_gelsight_contact_area_p95",
+    "left_gelsight_contact_area_range",
+    "left_gelsight_contact_area_slope",
+    "left_gelsight_contact_area_std",
+    "left_gelsight_contact_ratio",
+    "left_gelsight_diff_max_current",
+    "left_gelsight_diff_max_max",
+    "left_gelsight_diff_max_mean",
+    "left_gelsight_diff_max_min",
+    "left_gelsight_diff_max_missing_ratio",
+    "left_gelsight_diff_max_p95",
+    "left_gelsight_diff_max_range",
+    "left_gelsight_diff_max_slope",
+    "left_gelsight_diff_max_std",
+    "left_gelsight_diff_mean_current",
+    "left_gelsight_diff_mean_max",
+    "left_gelsight_diff_mean_mean",
+    "left_gelsight_diff_mean_min",
+    "left_gelsight_diff_mean_missing_ratio",
+    "left_gelsight_diff_mean_p95",
+    "left_gelsight_diff_mean_range",
+    "left_gelsight_diff_mean_slope",
+    "left_gelsight_diff_mean_std",
+    "left_gelsight_diff_p95_current",
+    "left_gelsight_diff_p95_max",
+    "left_gelsight_diff_p95_mean",
+    "left_gelsight_diff_p95_min",
+    "left_gelsight_diff_p95_missing_ratio",
+    "left_gelsight_diff_p95_p95",
+    "left_gelsight_diff_p95_range",
+    "left_gelsight_diff_p95_slope",
+    "left_gelsight_diff_p95_std",
+    "left_gelsight_raw_diff_mean_current",
+    "left_gelsight_raw_diff_mean_max",
+    "left_gelsight_raw_diff_mean_mean",
+    "left_gelsight_raw_diff_mean_min",
+    "left_gelsight_raw_diff_mean_missing_ratio",
+    "left_gelsight_raw_diff_mean_p95",
+    "left_gelsight_raw_diff_mean_range",
+    "left_gelsight_raw_diff_mean_slope",
+    "left_gelsight_raw_diff_mean_std",
+    "left_gelsight_slip_rate",
+    "right_gelsight_area_growth",
+    "right_gelsight_area_max",
+    "right_gelsight_area_mean",
+    "right_gelsight_area_stability",
+    "right_gelsight_center_x_current",
+    "right_gelsight_center_x_max",
+    "right_gelsight_center_x_mean",
+    "right_gelsight_center_x_min",
+    "right_gelsight_center_x_missing_ratio",
+    "right_gelsight_center_x_p95",
+    "right_gelsight_center_x_range",
+    "right_gelsight_center_x_slope",
+    "right_gelsight_center_x_std",
+    "right_gelsight_center_y_current",
+    "right_gelsight_center_y_max",
+    "right_gelsight_center_y_mean",
+    "right_gelsight_center_y_min",
+    "right_gelsight_center_y_missing_ratio",
+    "right_gelsight_center_y_p95",
+    "right_gelsight_center_y_range",
+    "right_gelsight_center_y_slope",
+    "right_gelsight_center_y_std",
+    "right_gelsight_contact_area_current",
+    "right_gelsight_contact_area_max",
+    "right_gelsight_contact_area_mean",
+    "right_gelsight_contact_area_min",
+    "right_gelsight_contact_area_missing_ratio",
+    "right_gelsight_contact_area_p95",
+    "right_gelsight_contact_area_range",
+    "right_gelsight_contact_area_slope",
+    "right_gelsight_contact_area_std",
+    "right_gelsight_contact_ratio",
+    "right_gelsight_diff_max_current",
+    "right_gelsight_diff_max_max",
+    "right_gelsight_diff_max_mean",
+    "right_gelsight_diff_max_min",
+    "right_gelsight_diff_max_missing_ratio",
+    "right_gelsight_diff_max_p95",
+    "right_gelsight_diff_max_range",
+    "right_gelsight_diff_max_slope",
+    "right_gelsight_diff_max_std",
+    "right_gelsight_diff_mean_current",
+    "right_gelsight_diff_mean_max",
+    "right_gelsight_diff_mean_mean",
+    "right_gelsight_diff_mean_min",
+    "right_gelsight_diff_mean_missing_ratio",
+    "right_gelsight_diff_mean_p95",
+    "right_gelsight_diff_mean_range",
+    "right_gelsight_diff_mean_slope",
+    "right_gelsight_diff_mean_std",
+    "right_gelsight_diff_p95_current",
+    "right_gelsight_diff_p95_max",
+    "right_gelsight_diff_p95_mean",
+    "right_gelsight_diff_p95_min",
+    "right_gelsight_diff_p95_missing_ratio",
+    "right_gelsight_diff_p95_p95",
+    "right_gelsight_diff_p95_range",
+    "right_gelsight_diff_p95_slope",
+    "right_gelsight_diff_p95_std",
+    "right_gelsight_raw_diff_mean_current",
+    "right_gelsight_raw_diff_mean_max",
+    "right_gelsight_raw_diff_mean_mean",
+    "right_gelsight_raw_diff_mean_min",
+    "right_gelsight_raw_diff_mean_missing_ratio",
+    "right_gelsight_raw_diff_mean_p95",
+    "right_gelsight_raw_diff_mean_range",
+    "right_gelsight_raw_diff_mean_slope",
+    "right_gelsight_raw_diff_mean_std",
+    "right_gelsight_slip_rate"
+  ],
+  "combined_features": [
+    "force_balance_absdiff_current",
+    "force_balance_absdiff_max",
+    "force_balance_absdiff_mean",
+    "force_balance_absdiff_slope",
+    "force_balance_ratio_current",
+    "force_balance_ratio_max",
+    "force_balance_ratio_mean",
+    "force_balance_ratio_slope",
+    "gelsight_area_balance_absdiff_current",
+    "gelsight_area_balance_absdiff_max",
+    "gelsight_area_balance_absdiff_mean",
+    "gelsight_area_balance_absdiff_slope",
+    "gelsight_area_balance_ratio_current",
+    "gelsight_area_balance_ratio_max",
+    "gelsight_area_balance_ratio_mean",
+    "gelsight_area_balance_ratio_slope",
+    "gelsight_diff_balance_absdiff_current",
+    "gelsight_diff_balance_absdiff_max",
+    "gelsight_diff_balance_absdiff_mean",
+    "gelsight_diff_balance_absdiff_slope",
+    "gelsight_diff_balance_ratio_current",
+    "gelsight_diff_balance_ratio_max",
+    "gelsight_diff_balance_ratio_mean",
+    "gelsight_diff_balance_ratio_slope",
+    "left_force_fx_current",
+    "left_force_fx_max",
+    "left_force_fx_mean",
+    "left_force_fx_min",
+    "left_force_fx_missing_ratio",
+    "left_force_fx_p95",
+    "left_force_fx_range",
+    "left_force_fx_slope",
+    "left_force_fx_std",
+    "left_force_fy_current",
+    "left_force_fy_max",
+    "left_force_fy_mean",
+    "left_force_fy_min",
+    "left_force_fy_missing_ratio",
+    "left_force_fy_p95",
+    "left_force_fy_range",
+    "left_force_fy_slope",
+    "left_force_fy_std",
+    "left_force_fz_current",
+    "left_force_fz_max",
+    "left_force_fz_mean",
+    "left_force_fz_min",
+    "left_force_fz_missing_ratio",
+    "left_force_fz_p95",
+    "left_force_fz_range",
+    "left_force_fz_slope",
+    "left_force_fz_std",
+    "left_force_norm_current",
+    "left_force_norm_delta_current",
+    "left_force_norm_delta_max",
+    "left_force_norm_delta_mean",
+    "left_force_norm_delta_min",
+    "left_force_norm_delta_missing_ratio",
+    "left_force_norm_delta_p95",
+    "left_force_norm_delta_range",
+    "left_force_norm_delta_slope",
+    "left_force_norm_delta_std",
+    "left_force_norm_max",
+    "left_force_norm_mean",
+    "left_force_norm_min",
+    "left_force_norm_missing_ratio",
+    "left_force_norm_p95",
+    "left_force_norm_range",
+    "left_force_norm_slope",
+    "left_force_norm_std",
+    "left_force_tx_current",
+    "left_force_tx_max",
+    "left_force_tx_mean",
+    "left_force_tx_min",
+    "left_force_tx_missing_ratio",
+    "left_force_tx_p95",
+    "left_force_tx_range",
+    "left_force_tx_slope",
+    "left_force_tx_std",
+    "left_force_ty_current",
+    "left_force_ty_max",
+    "left_force_ty_mean",
+    "left_force_ty_min",
+    "left_force_ty_missing_ratio",
+    "left_force_ty_p95",
+    "left_force_ty_range",
+    "left_force_ty_slope",
+    "left_force_ty_std",
+    "left_force_tz_current",
+    "left_force_tz_max",
+    "left_force_tz_mean",
+    "left_force_tz_min",
+    "left_force_tz_missing_ratio",
+    "left_force_tz_p95",
+    "left_force_tz_range",
+    "left_force_tz_slope",
+    "left_force_tz_std",
+    "left_gelsight_area_growth",
+    "left_gelsight_area_max",
+    "left_gelsight_area_mean",
+    "left_gelsight_area_stability",
+    "left_gelsight_center_x_current",
+    "left_gelsight_center_x_max",
+    "left_gelsight_center_x_mean",
+    "left_gelsight_center_x_min",
+    "left_gelsight_center_x_missing_ratio",
+    "left_gelsight_center_x_p95",
+    "left_gelsight_center_x_range",
+    "left_gelsight_center_x_slope",
+    "left_gelsight_center_x_std",
+    "left_gelsight_center_y_current",
+    "left_gelsight_center_y_max",
+    "left_gelsight_center_y_mean",
+    "left_gelsight_center_y_min",
+    "left_gelsight_center_y_missing_ratio",
+    "left_gelsight_center_y_p95",
+    "left_gelsight_center_y_range",
+    "left_gelsight_center_y_slope",
+    "left_gelsight_center_y_std",
+    "left_gelsight_contact_area_current",
+    "left_gelsight_contact_area_max",
+    "left_gelsight_contact_area_mean",
+    "left_gelsight_contact_area_min",
+    "left_gelsight_contact_area_missing_ratio",
+    "left_gelsight_contact_area_p95",
+    "left_gelsight_contact_area_range",
+    "left_gelsight_contact_area_slope",
+    "left_gelsight_contact_area_std",
+    "left_gelsight_contact_ratio",
+    "left_gelsight_diff_max_current",
+    "left_gelsight_diff_max_max",
+    "left_gelsight_diff_max_mean",
+    "left_gelsight_diff_max_min",
+    "left_gelsight_diff_max_missing_ratio",
+    "left_gelsight_diff_max_p95",
+    "left_gelsight_diff_max_range",
+    "left_gelsight_diff_max_slope",
+    "left_gelsight_diff_max_std",
+    "left_gelsight_diff_mean_current",
+    "left_gelsight_diff_mean_max",
+    "left_gelsight_diff_mean_mean",
+    "left_gelsight_diff_mean_min",
+    "left_gelsight_diff_mean_missing_ratio",
+    "left_gelsight_diff_mean_p95",
+    "left_gelsight_diff_mean_range",
+    "left_gelsight_diff_mean_slope",
+    "left_gelsight_diff_mean_std",
+    "left_gelsight_diff_p95_current",
+    "left_gelsight_diff_p95_max",
+    "left_gelsight_diff_p95_mean",
+    "left_gelsight_diff_p95_min",
+    "left_gelsight_diff_p95_missing_ratio",
+    "left_gelsight_diff_p95_p95",
+    "left_gelsight_diff_p95_range",
+    "left_gelsight_diff_p95_slope",
+    "left_gelsight_diff_p95_std",
+    "left_gelsight_raw_diff_mean_current",
+    "left_gelsight_raw_diff_mean_max",
+    "left_gelsight_raw_diff_mean_mean",
+    "left_gelsight_raw_diff_mean_min",
+    "left_gelsight_raw_diff_mean_missing_ratio",
+    "left_gelsight_raw_diff_mean_p95",
+    "left_gelsight_raw_diff_mean_range",
+    "left_gelsight_raw_diff_mean_slope",
+    "left_gelsight_raw_diff_mean_std",
+    "left_gelsight_slip_rate",
+    "left_torque_norm_current",
+    "left_torque_norm_delta_current",
+    "left_torque_norm_delta_max",
+    "left_torque_norm_delta_mean",
+    "left_torque_norm_delta_min",
+    "left_torque_norm_delta_missing_ratio",
+    "left_torque_norm_delta_p95",
+    "left_torque_norm_delta_range",
+    "left_torque_norm_delta_slope",
+    "left_torque_norm_delta_std",
+    "left_torque_norm_max",
+    "left_torque_norm_mean",
+    "left_torque_norm_min",
+    "left_torque_norm_missing_ratio",
+    "left_torque_norm_p95",
+    "left_torque_norm_range",
+    "left_torque_norm_slope",
+    "left_torque_norm_std",
+    "right_force_fx_current",
+    "right_force_fx_max",
+    "right_force_fx_mean",
+    "right_force_fx_min",
+    "right_force_fx_missing_ratio",
+    "right_force_fx_p95",
+    "right_force_fx_range",
+    "right_force_fx_slope",
+    "right_force_fx_std",
+    "right_force_fy_current",
+    "right_force_fy_max",
+    "right_force_fy_mean",
+    "right_force_fy_min",
+    "right_force_fy_missing_ratio",
+    "right_force_fy_p95",
+    "right_force_fy_range",
+    "right_force_fy_slope",
+    "right_force_fy_std",
+    "right_force_fz_current",
+    "right_force_fz_max",
+    "right_force_fz_mean",
+    "right_force_fz_min",
+    "right_force_fz_missing_ratio",
+    "right_force_fz_p95",
+    "right_force_fz_range",
+    "right_force_fz_slope",
+    "right_force_fz_std",
+    "right_force_norm_current",
+    "right_force_norm_delta_current",
+    "right_force_norm_delta_max",
+    "right_force_norm_delta_mean",
+    "right_force_norm_delta_min",
+    "right_force_norm_delta_missing_ratio",
+    "right_force_norm_delta_p95",
+    "right_force_norm_delta_range",
+    "right_force_norm_delta_slope",
+    "right_force_norm_delta_std",
+    "right_force_norm_max",
+    "right_force_norm_mean",
+    "right_force_norm_min",
+    "right_force_norm_missing_ratio",
+    "right_force_norm_p95",
+    "right_force_norm_range",
+    "right_force_norm_slope",
+    "right_force_norm_std",
+    "right_force_tx_current",
+    "right_force_tx_max",
+    "right_force_tx_mean",
+    "right_force_tx_min",
+    "right_force_tx_missing_ratio",
+    "right_force_tx_p95",
+    "right_force_tx_range",
+    "right_force_tx_slope",
+    "right_force_tx_std",
+    "right_force_ty_current",
+    "right_force_ty_max",
+    "right_force_ty_mean",
+    "right_force_ty_min",
+    "right_force_ty_missing_ratio",
+    "right_force_ty_p95",
+    "right_force_ty_range",
+    "right_force_ty_slope",
+    "right_force_ty_std",
+    "right_force_tz_current",
+    "right_force_tz_max",
+    "right_force_tz_mean",
+    "right_force_tz_min",
+    "right_force_tz_missing_ratio",
+    "right_force_tz_p95",
+    "right_force_tz_range",
+    "right_force_tz_slope",
+    "right_force_tz_std",
+    "right_gelsight_area_growth",
+    "right_gelsight_area_max",
+    "right_gelsight_area_mean",
+    "right_gelsight_area_stability",
+    "right_gelsight_center_x_current",
+    "right_gelsight_center_x_max",
+    "right_gelsight_center_x_mean",
+    "right_gelsight_center_x_min",
+    "right_gelsight_center_x_missing_ratio",
+    "right_gelsight_center_x_p95",
+    "right_gelsight_center_x_range",
+    "right_gelsight_center_x_slope",
+    "right_gelsight_center_x_std",
+    "right_gelsight_center_y_current",
+    "right_gelsight_center_y_max",
+    "right_gelsight_center_y_mean",
+    "right_gelsight_center_y_min",
+    "right_gelsight_center_y_missing_ratio",
+    "right_gelsight_center_y_p95",
+    "right_gelsight_center_y_range",
+    "right_gelsight_center_y_slope",
+    "right_gelsight_center_y_std",
+    "right_gelsight_contact_area_current",
+    "right_gelsight_contact_area_max",
+    "right_gelsight_contact_area_mean",
+    "right_gelsight_contact_area_min",
+    "right_gelsight_contact_area_missing_ratio",
+    "right_gelsight_contact_area_p95",
+    "right_gelsight_contact_area_range",
+    "right_gelsight_contact_area_slope",
+    "right_gelsight_contact_area_std",
+    "right_gelsight_contact_ratio",
+    "right_gelsight_diff_max_current",
+    "right_gelsight_diff_max_max",
+    "right_gelsight_diff_max_mean",
+    "right_gelsight_diff_max_min",
+    "right_gelsight_diff_max_missing_ratio",
+    "right_gelsight_diff_max_p95",
+    "right_gelsight_diff_max_range",
+    "right_gelsight_diff_max_slope",
+    "right_gelsight_diff_max_std",
+    "right_gelsight_diff_mean_current",
+    "right_gelsight_diff_mean_max",
+    "right_gelsight_diff_mean_mean",
+    "right_gelsight_diff_mean_min",
+    "right_gelsight_diff_mean_missing_ratio",
+    "right_gelsight_diff_mean_p95",
+    "right_gelsight_diff_mean_range",
+    "right_gelsight_diff_mean_slope",
+    "right_gelsight_diff_mean_std",
+    "right_gelsight_diff_p95_current",
+    "right_gelsight_diff_p95_max",
+    "right_gelsight_diff_p95_mean",
+    "right_gelsight_diff_p95_min",
+    "right_gelsight_diff_p95_missing_ratio",
+    "right_gelsight_diff_p95_p95",
+    "right_gelsight_diff_p95_range",
+    "right_gelsight_diff_p95_slope",
+    "right_gelsight_diff_p95_std",
+    "right_gelsight_raw_diff_mean_current",
+    "right_gelsight_raw_diff_mean_max",
+    "right_gelsight_raw_diff_mean_mean",
+    "right_gelsight_raw_diff_mean_min",
+    "right_gelsight_raw_diff_mean_missing_ratio",
+    "right_gelsight_raw_diff_mean_p95",
+    "right_gelsight_raw_diff_mean_range",
+    "right_gelsight_raw_diff_mean_slope",
+    "right_gelsight_raw_diff_mean_std",
+    "right_gelsight_slip_rate",
+    "right_torque_norm_current",
+    "right_torque_norm_delta_current",
+    "right_torque_norm_delta_max",
+    "right_torque_norm_delta_mean",
+    "right_torque_norm_delta_min",
+    "right_torque_norm_delta_missing_ratio",
+    "right_torque_norm_delta_p95",
+    "right_torque_norm_delta_range",
+    "right_torque_norm_delta_slope",
+    "right_torque_norm_delta_std",
+    "right_torque_norm_max",
+    "right_torque_norm_mean",
+    "right_torque_norm_min",
+    "right_torque_norm_missing_ratio",
+    "right_torque_norm_p95",
+    "right_torque_norm_range",
+    "right_torque_norm_slope",
+    "right_torque_norm_std",
+    "torque_balance_absdiff_current",
+    "torque_balance_absdiff_max",
+    "torque_balance_absdiff_mean",
+    "torque_balance_absdiff_slope",
+    "torque_balance_ratio_current",
+    "torque_balance_ratio_max",
+    "torque_balance_ratio_mean",
+    "torque_balance_ratio_slope"
+  ],
+  "skipped": [
+    {
+      "episode_id": "episode_20260722T034749_810776Z_000001",
+      "reason": "coverage:0.784"
+    },
+    {
+      "episode_id": "episode_20260722T034831_419855Z_000001",
+      "reason": "coverage:0.783"
+    },
+    {
+      "episode_id": "episode_20260722T034912_845375Z_000001",
+      "reason": "coverage:0.033"
+    },
+    {
+      "episode_id": "episode_20260722T035404_009224Z_000001",
+      "reason": "coverage:0.799"
+    },
+    {
+      "episode_id": "episode_20260722T032211_695356Z_000001",
+      "reason": "coverage:0.785"
+    },
+    {
+      "episode_id": "episode_20260722T033124_109466Z_000001",
+      "reason": "coverage:0.033"
+    },
+    {
+      "episode_id": "episode_20260722T033849_959668Z_000001",
+      "reason": "coverage:0.034"
+    },
+    {
+      "episode_id": "episode_20260722T031143_768266Z_000001",
+      "reason": "coverage:0.609"
+    },
+    {
+      "episode_id": "episode_20260722T031207_327308Z_000001",
+      "reason": "coverage:0.705"
+    },
+    {
+      "episode_id": "episode_20260722T031228_216001Z_000001",
+      "reason": "coverage:0.656"
+    },
+    {
+      "episode_id": "episode_20260722T031347_961981Z_000001",
+      "reason": "coverage:0.559"
+    },
+    {
+      "episode_id": "episode_20260722T031528_896629Z_000001",
+      "reason": "coverage:0.625"
+    },
+    {
+      "episode_id": "episode_20260722T031622_563188Z_000001",
+      "reason": "coverage:0.131"
+    },
+    {
+      "episode_id": "episode_20260722T031643_161994Z_000001",
+      "reason": "coverage:0.641"
+    },
+    {
+      "episode_id": "episode_20260722T031804_921484Z_000001",
+      "reason": "coverage:0.783"
+    },
+    {
+      "episode_id": "episode_20260723T031651_834986Z_000001",
+      "reason": "coverage:0.305"
+    },
+    {
+      "episode_id": "episode_20260723T031914_605482Z_000001",
+      "reason": "coverage:0.095"
+    },
+    {
+      "episode_id": "episode_20260723T032110_209071Z_000001",
+      "reason": "coverage:0.353"
+    },
+    {
+      "episode_id": "episode_20260723T031030_348365Z_000001",
+      "reason": "coverage:0.080"
+    },
+    {
+      "episode_id": "episode_20260723T030141_187478Z_000001",
+      "reason": "coverage:0.065"
+    },
+    {
+      "episode_id": "episode_20260722T062159_894777Z_000001",
+      "reason": "coverage:0.784"
+    },
+    {
+      "episode_id": "episode_20260722T062326_376977Z_000001",
+      "reason": "coverage:0.047"
+    },
+    {
+      "episode_id": "episode_20260722T062413_308259Z_000001",
+      "reason": "coverage:0.031"
+    },
+    {
+      "episode_id": "episode_20260722T062831_417138Z_000001",
+      "reason": "coverage:0.786"
+    },
+    {
+      "episode_id": "episode_20260722T060822_723302Z_000001",
+      "reason": "coverage:0.096"
+    },
+    {
+      "episode_id": "episode_20260722T061615_169338Z_000001",
+      "reason": "coverage:0.079"
+    },
+    {
+      "episode_id": "episode_20260722T061634_689577Z_000001",
+      "reason": "coverage:0.031"
+    },
+    {
+      "episode_id": "episode_20260722T025244_731032Z_000001",
+      "reason": "force_outlier:0.027"
+    },
+    {
+      "episode_id": "episode_20260722T025405_349200Z_000001",
+      "reason": "coverage:0.784"
+    },
+    {
+      "episode_id": "episode_20260722T025558_962924Z_000001",
+      "reason": "coverage:0.783"
+    },
+    {
+      "episode_id": "episode_20260722T025646_375815Z_000001",
+      "reason": "coverage:0.786"
+    },
+    {
+      "episode_id": "episode_20260722T025710_526329Z_000001",
+      "reason": "coverage:0.786"
+    },
+    {
+      "episode_id": "episode_20260722T025755_560109Z_000001",
+      "reason": "coverage:0.800"
+    },
+    {
+      "episode_id": "episode_20260722T030104_421704Z_000001",
+      "reason": "coverage:0.754"
+    },
+    {
+      "episode_id": "episode_20260722T030146_837445Z_000001",
+      "reason": "force_outlier:0.348"
+    },
+    {
+      "episode_id": "episode_20260722T030209_978360Z_000001",
+      "reason": "force_outlier:1.000"
+    },
+    {
+      "episode_id": "episode_20260722T030359_872417Z_000001",
+      "reason": "coverage:0.017"
+    },
+    {
+      "episode_id": "episode_20260722T024245_137181Z_000001",
+      "reason": "coverage:0.368"
+    },
+    {
+      "episode_id": "episode_20260722T024307_705066Z_000001",
+      "reason": "coverage:0.672"
+    },
+    {
+      "episode_id": "episode_20260722T024500_647435Z_000001",
+      "reason": "coverage:0.033"
+    },
+    {
+      "episode_id": "episode_20260722T024806_979455Z_000001",
+      "reason": "coverage:0.031"
+    },
+    {
+      "episode_id": "episode_20260722T024954_791457Z_000001",
+      "reason": "coverage:0.081"
+    },
+    {
+      "episode_id": "episode_20260722T022920_355972Z_000001",
+      "reason": "coverage:0.033"
+    },
+    {
+      "episode_id": "episode_20260722T023428_040178Z_000001",
+      "reason": "coverage:0.785"
+    },
+    {
+      "episode_id": "episode_20260722T023942_683393Z_000001",
+      "reason": "coverage:0.784"
+    },
+    {
+      "episode_id": "episode_20260723T022941_723688Z_000001",
+      "reason": "coverage:0.113"
+    },
+    {
+      "episode_id": "episode_20260723T023119_973154Z_000001",
+      "reason": "coverage:0.014"
+    },
+    {
+      "episode_id": "episode_20260723T023141_776173Z_000001",
+      "reason": "coverage:0.194"
+    },
+    {
+      "episode_id": "episode_20260723T023444_076165Z_000001",
+      "reason": "coverage:0.799"
+    },
+    {
+      "episode_id": "episode_20260723T025102_693358Z_000001",
+      "reason": "coverage:0.768"
+    },
+    {
+      "episode_id": "episode_20260723T022146_821313Z_000001",
+      "reason": "coverage:0.031"
+    },
+    {
+      "episode_id": "episode_20260723T020629_435635Z_000001",
+      "reason": "coverage:0.448"
+    },
+    {
+      "episode_id": "episode_20260717T064313_454817Z_000001",
+      "reason": "coverage:0.111"
+    },
+    {
+      "episode_id": "episode_20260717T064431_878323Z_000001",
+      "reason": "force_outlier:0.025"
+    },
+    {
+      "episode_id": "episode_20260717T064524_215312Z_000001",
+      "reason": "coverage:0.049"
+    },
+    {
+      "episode_id": "episode_20260717T064545_873077Z_000001",
+      "reason": "force_outlier:0.323"
+    },
+    {
+      "episode_id": "episode_20260717T064610_256093Z_000001",
+      "reason": "force_outlier:1.000"
+    },
+    {
+      "episode_id": "episode_20260717T064633_155968Z_000001",
+      "reason": "force_outlier:0.429"
+    },
+    {
+      "episode_id": "episode_20260717T064658_954989Z_000001",
+      "reason": "coverage:0.689"
+    },
+    {
+      "episode_id": "episode_20260717T064800_669066Z_000001",
+      "reason": "force_outlier:0.019"
+    },
+    {
+      "episode_id": "episode_20260717T064843_328829Z_000001",
+      "reason": "force_outlier:0.038"
+    },
+    {
+      "episode_id": "episode_20260717T064905_873049Z_000001",
+      "reason": "force_outlier:0.925"
+    },
+    {
+      "episode_id": "episode_20260717T065021_315675Z_000001",
+      "reason": "force_outlier:0.026"
+    },
+    {
+      "episode_id": "episode_20260717T065042_846281Z_000001",
+      "reason": "force_outlier:0.051"
+    },
+    {
+      "episode_id": "episode_20260717T063401_015665Z_000001",
+      "reason": "force_outlier:0.032"
+    },
+    {
+      "episode_id": "episode_20260717T063447_718646Z_000001",
+      "reason": "force_outlier:0.039"
+    },
+    {
+      "episode_id": "episode_20260717T063549_536643Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T063608_713680Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T063743_116319Z_000001",
+      "reason": "force_outlier:0.022"
+    },
+    {
+      "episode_id": "episode_20260717T063834_815470Z_000001",
+      "reason": "force_outlier:0.039"
+    },
+    {
+      "episode_id": "episode_20260717T063917_701966Z_000001",
+      "reason": "force_outlier:0.027"
+    },
+    {
+      "episode_id": "episode_20260717T064050_701560Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T064114_900616Z_000001",
+      "reason": "force_outlier:0.139"
+    },
+    {
+      "episode_id": "episode_20260717T062213_388428Z_000001",
+      "reason": "force_outlier:0.025"
+    },
+    {
+      "episode_id": "episode_20260717T062236_705733Z_000001",
+      "reason": "force_outlier:0.028"
+    },
+    {
+      "episode_id": "episode_20260717T062323_910610Z_000001",
+      "reason": "force_outlier:0.028"
+    },
+    {
+      "episode_id": "episode_20260717T062405_020954Z_000001",
+      "reason": "force_outlier:0.050"
+    },
+    {
+      "episode_id": "episode_20260717T062519_620718Z_000001",
+      "reason": "force_outlier:0.039"
+    },
+    {
+      "episode_id": "episode_20260717T062541_911220Z_000001",
+      "reason": "coverage:0.031"
+    },
+    {
+      "episode_id": "episode_20260717T062617_712511Z_000001",
+      "reason": "force_outlier:0.021"
+    },
+    {
+      "episode_id": "episode_20260717T062658_999421Z_000001",
+      "reason": "force_outlier:0.083"
+    },
+    {
+      "episode_id": "episode_20260717T062726_240714Z_000001",
+      "reason": "force_outlier:0.120"
+    },
+    {
+      "episode_id": "episode_20260717T062747_040201Z_000001",
+      "reason": "force_outlier:0.103"
+    },
+    {
+      "episode_id": "episode_20260717T062807_716191Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T062829_975267Z_000001",
+      "reason": "force_outlier:0.012"
+    },
+    {
+      "episode_id": "episode_20260717T062931_986945Z_000001",
+      "reason": "force_outlier:0.032"
+    },
+    {
+      "episode_id": "episode_20260717T075843_343877Z_000001",
+      "reason": "coverage:0.800"
+    },
+    {
+      "episode_id": "episode_20260717T075924_112428Z_000001",
+      "reason": "coverage:0.671"
+    },
+    {
+      "episode_id": "episode_20260717T074705_909917Z_000001",
+      "reason": "coverage:0.720"
+    },
+    {
+      "episode_id": "episode_20260717T074852_666027Z_000001",
+      "reason": "coverage:0.735"
+    },
+    {
+      "episode_id": "episode_20260717T075015_697065Z_000001",
+      "reason": "coverage:0.095"
+    },
+    {
+      "episode_id": "episode_20260717T075159_009264Z_000001",
+      "reason": "coverage:0.720"
+    },
+    {
+      "episode_id": "episode_20260717T075239_844353Z_000001",
+      "reason": "coverage:0.272"
+    },
+    {
+      "episode_id": "episode_20260717T070817_076968Z_000001",
+      "reason": "force_outlier:0.029"
+    },
+    {
+      "episode_id": "episode_20260717T070837_599537Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T070902_882253Z_000001",
+      "reason": "force_outlier:0.029"
+    },
+    {
+      "episode_id": "episode_20260717T070922_493757Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T071001_268974Z_000001",
+      "reason": "force_outlier:0.041"
+    },
+    {
+      "episode_id": "episode_20260717T071020_177941Z_000001",
+      "reason": "coverage:0.017"
+    },
+    {
+      "episode_id": "episode_20260717T071040_146759Z_000001",
+      "reason": "force_outlier:0.026"
+    },
+    {
+      "episode_id": "episode_20260717T071101_080454Z_000001",
+      "reason": "force_outlier:0.027"
+    },
+    {
+      "episode_id": "episode_20260717T071233_680637Z_000001",
+      "reason": "force_outlier:0.038"
+    },
+    {
+      "episode_id": "episode_20260717T071254_142801Z_000001",
+      "reason": "force_outlier:0.051"
+    },
+    {
+      "episode_id": "episode_20260717T071339_380394Z_000001",
+      "reason": "force_outlier:0.027"
+    },
+    {
+      "episode_id": "episode_20260717T071419_748836Z_000001",
+      "reason": "force_outlier:0.041"
+    },
+    {
+      "episode_id": "episode_20260717T065539_414794Z_000001",
+      "reason": "force_outlier:0.026"
+    },
+    {
+      "episode_id": "episode_20260717T065605_818472Z_000001",
+      "reason": "force_outlier:0.070"
+    },
+    {
+      "episode_id": "episode_20260717T065735_540385Z_000001",
+      "reason": "coverage:0.799"
+    },
+    {
+      "episode_id": "episode_20260717T065756_270453Z_000001",
+      "reason": "force_outlier:0.026"
+    },
+    {
+      "episode_id": "episode_20260717T065838_012076Z_000001",
+      "reason": "force_outlier:0.018"
+    },
+    {
+      "episode_id": "episode_20260717T070406_972341Z_000001",
+      "reason": "force_outlier:0.013"
+    },
+    {
+      "episode_id": "episode_20260717T070427_435730Z_000001",
+      "reason": "force_outlier:0.026"
+    },
+    {
+      "episode_id": "episode_20260717T070448_549764Z_000001",
+      "reason": "force_outlier:0.028"
+    },
+    {
+      "episode_id": "episode_20260717T070549_703687Z_000001",
+      "reason": "force_outlier:0.050"
+    }
+  ]
+}

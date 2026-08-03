@@ -1,0 +1,66 @@
+[
+  {
+    "modality": "combined",
+    "accuracy": NaN,
+    "macro_f1": 0.0,
+    "train_accuracy": 0.9767441860465116,
+    "validation_accuracy": 0.7083333333333334,
+    "train_macro_f1": 0.9768870885596183,
+    "validation_macro_f1": 0.7074074074074074,
+    "best_epoch": 31,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "classification_report": {
+      "too_low": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "fine": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "too_high": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.0,
+      "macro avg": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "weighted avg": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      }
+    },
+    "input_features_force": 12,
+    "input_features_gelsight": 138,
+    "timesteps": 20,
+    "fold": "within_object"
+  }
+]

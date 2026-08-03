@@ -1,0 +1,34 @@
+{
+  "fold": "test_orange",
+  "modality": "combined",
+  "train_samples": 213,
+  "val_samples": 40,
+  "test_samples": 53,
+  "train_episodes": 213,
+  "val_episodes": 40,
+  "test_episodes": 53,
+  "best_epoch": 42,
+  "train_accuracy": 0.8215962441314554,
+  "train_macro_f1": 0.818328564091276,
+  "val_accuracy": 0.675,
+  "val_macro_f1": 0.6794871794871794,
+  "test_accuracy": 0.5094339622641509,
+  "test_macro_f1": 0.443001443001443,
+  "confusion_matrix": [
+    [
+      13,
+      5,
+      1
+    ],
+    [
+      1,
+      13,
+      5
+    ],
+    [
+      9,
+      5,
+      1
+    ]
+  ]
+}

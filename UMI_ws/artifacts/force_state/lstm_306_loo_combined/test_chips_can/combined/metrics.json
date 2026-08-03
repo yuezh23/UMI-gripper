@@ -1,0 +1,34 @@
+{
+  "fold": "test_chips_can",
+  "modality": "combined",
+  "train_samples": 212,
+  "val_samples": 39,
+  "test_samples": 55,
+  "train_episodes": 212,
+  "val_episodes": 39,
+  "test_episodes": 55,
+  "best_epoch": 8,
+  "train_accuracy": 0.6367924528301887,
+  "train_macro_f1": 0.6268189839935168,
+  "val_accuracy": 0.6410256410256411,
+  "val_macro_f1": 0.6247571100512278,
+  "test_accuracy": 0.5454545454545454,
+  "test_macro_f1": 0.5227432216905902,
+  "confusion_matrix": [
+    [
+      16,
+      3,
+      0
+    ],
+    [
+      10,
+      9,
+      0
+    ],
+    [
+      5,
+      7,
+      5
+    ]
+  ]
+}
