@@ -1,12 +1,27 @@
-# ROS 2 build artifacts
-**/build/
-**/install/
-**/log/
-
-# OS-specific files
 .DS_Store
 Thumbs.db
 
 .vscode
 
 UMI_ws/data/*
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+
+**/build/
+**/install/
+**/log/
+
+UMI_ws/data/
+UMI_ws/data_yue/
+UMI_ws/data_test/
+UMI_ws/tmp/
+UMI_ws/reports/
+
+UMI_ws/artifacts/force_state/*
+!UMI_ws/artifacts/force_state/causal_windows_v3.csv
+UMI_ws/data/*
+
+!UMI_ws/artifacts/force_state/causal_windows_v3.features.json
+!UMI_ws/artifacts/force_state/leave_one_object_out_top100_strict_v3/
+!UMI_ws/artifacts/force_state/leave_one_object_out_top100_strict_v3/**
