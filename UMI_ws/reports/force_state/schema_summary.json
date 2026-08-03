@@ -1,0 +1,55 @@
+{
+  "episodes_total": 420,
+  "object_counts": {
+    "bottle_cap": 60,
+    "chips_can": 60,
+    "foam_brick": 60,
+    "marker": 60,
+    "orange": 60,
+    "paper_cup": 60,
+    "softball": 60
+  },
+  "label_counts": {
+    "too_high": 140,
+    "too_low": 140,
+    "fine": 140
+  },
+  "quality_counts": {
+    "ok": 420
+  },
+  "schema": {
+    "__root__": [
+      "force_left",
+      "force_right",
+      "gelsight_left",
+      "gelsight_right",
+      "timestamp"
+    ],
+    "force_left": [
+      "fx",
+      "fy",
+      "fz",
+      "stamp",
+      "tx",
+      "ty",
+      "tz"
+    ],
+    "force_right": [
+      "fx",
+      "fy",
+      "fz",
+      "stamp",
+      "tx",
+      "ty",
+      "tz"
+    ],
+    "gelsight_left": [
+      "image",
+      "timestamp"
+    ],
+    "gelsight_right": [
+      "image",
+      "timestamp"
+    ]
+  }
+}
