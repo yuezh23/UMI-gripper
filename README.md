@@ -30,7 +30,7 @@ UMI-gripper/
     │   ├── ros2_gelsight_package/    # GelSight ROS 2 publisher
     │   ├── sensor_framework/         # timestamp synchronization and recording
     │   └── gopro_driver/             # GoPro support
-    ├── data_yue/train/               # labeled raw recordings (not committed to Git)
+    ├── exp_data/train/               # labeled raw recordings (not committed to Git)
     ├── reports/force_state/           # data audits, phase plots, and reviewed events
     ├── artifacts/force_state/         # feature tables, models, predictions, and metrics
     ├── build.sh                       # build and source the ROS 2 workspace
@@ -50,7 +50,7 @@ The current dataset contains seven objects, three force levels, and 20 trials
 per object/level combination: 420 episodes in total.
 
 ```text
-UMI_ws/data_yue/train/<object>/<label>/<trial>/
+UMI_ws/exp_data/train/<object>/<label>/<trial>/
 └── episodes/<episode_id>/
     ├── episode_info.json
     ├── metadata.json
@@ -70,7 +70,7 @@ record contains `fx`, `fy`, `fz`, `tx`, `ty`, and `tz`.
 ## Collect training data
 
 Connect the two GelSight cameras and two MMS101 sensors, then use three
-terminals. These commands save the raw recordings under `~/data_yue/train`.
+terminals. These commands save the raw recordings under `~/exp_data/train`.
 
 ### Terminal A — GelSight cameras
 
@@ -96,7 +96,7 @@ number before recording.
 ```bash
 cd UMI-gripper/UMI_ws
 source build.sh
-./record.sh 1 15 ~/data_yue/train/{object name}/{trial number}
+./record.sh 1 15 ~/exp_data/train/{object name}/{trial number}
 ```
 
 Repeat Terminal C with a new trial number for every recording. The training
@@ -105,7 +105,7 @@ object name and trial number. In the simplified command, include that label in
 `{object name}`; for example:
 
 ```bash
-./record.sh 1 15 ~/data_yue/train/paper_cup/medium/01
+./record.sh 1 15 ~/exp_data/train/paper_cup/medium/01
 ```
 
 Keep the grasp timing consistent and record only the intended condition:
@@ -137,7 +137,7 @@ python -m pip install -r src/force_state_xgb/requirements.txt
 
 ```bash
 python src/force_state_xgb/inspect_synced_train.py \
-  --data-root ~/data_yue/train \
+  --data-root ~/exp_data/train \
   --output-dir reports/force_state
 ```
 
@@ -149,7 +149,7 @@ episodes per class.
 
 ```bash
 python src/force_state_xgb/plot_force_phase_preview.py \
-  --data-root ~/data_yue/train \
+  --data-root ~/exp_data/train \
   --output-dir reports/force_state/phase_preview_corrected \
   --grasp-start-sec 0.0 \
   --grasp-end-sec 15.0 \
@@ -168,7 +168,7 @@ ending at that point.
 
 ```bash
 python src/force_state_xgb/detect_force_phase.py \
-  --data-root ~/data_yue/train \
+  --data-root ~/exp_data/train \
   --grasp-start-sec 0.0 \
   --grasp-end-sec 15.0 \
   --fallback-eval-sec 3.0 \
