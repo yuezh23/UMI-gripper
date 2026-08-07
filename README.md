@@ -22,7 +22,7 @@ evaluation so that recordings from one episode cannot leak across splits.
 ## Repository layout
 
 ```text
-UMI-gripper-yue/
+UMI-gripper/
 └── UMI_ws/
     ├── src/
     │   ├── force_state_xgb/          # feature, training, evaluation, and real-time code
@@ -75,7 +75,7 @@ terminals. These commands save the raw recordings under `~/data_yue/train`.
 ### Terminal A — GelSight cameras
 
 ```bash
-cd UMI-gripper-yue/UMI_ws
+cd UMI-gripper/UMI_ws
 source build.sh
 source gelsight.sh
 ```
@@ -83,7 +83,7 @@ source gelsight.sh
 ### Terminal B — MMS101 force/torque sensors
 
 ```bash
-cd UMI-gripper-yue/UMI_ws
+cd UMI-gripper/UMI_ws
 source build.sh
 source force_sensor.sh
 ```
@@ -94,7 +94,7 @@ Each command records one 15-second episode. Replace the object name and trial
 number before recording.
 
 ```bash
-cd UMI-gripper-yue/UMI_ws
+cd UMI-gripper/UMI_ws
 source build.sh
 ./record.sh 1 15 ~/data_yue/train/{object name}/{trial number}
 ```
