@@ -26,7 +26,7 @@ holding margin.
 ```text
 lerobot_trossen/
 ├── right_gripper_slow_close/        # Trossen controller and experiment recorders
-└── UMI-gripper-yue/
+└── UMI-gripper/
     ├── README.md                     # offline collection and training guide
     ├── README_REALTIME.md            # this guide
     └── UMI_ws/
@@ -61,13 +61,13 @@ git clone --branch umi-gripper-force-feedback --single-branch \
 
 cd ~/lerobot_trossen
 git clone --branch realtime-force-state --single-branch \
-  https://github.com/yuezh23/UMI-gripper.git UMI-gripper-yue
+  https://github.com/yuezh23/UMI-gripper.git
 ```
 
 The required result is:
 
 ```text
-~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+~/lerobot_trossen/UMI-gripper/UMI_ws
 ```
 
 Follow the main Trossen README to install `uv` and create its `.venv`, then
@@ -77,13 +77,13 @@ install the XGBoost pipeline dependencies into the same environment:
 cd ~/lerobot_trossen
 uv sync
 uv pip install --python .venv/bin/python \
-  -r UMI-gripper-yue/UMI_ws/src/force_state_xgb/requirements.txt
+  -r UMI-gripper/UMI_ws/src/force_state_xgb/requirements.txt
 ```
 
 Build the UMI ROS 2 packages once before starting the experiment:
 
 ```bash
-cd ~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+cd ~/lerobot_trossen/UMI-gripper/UMI_ws
 source /opt/ros/jazzy/setup.bash
 source build.sh
 ```
@@ -95,7 +95,7 @@ Use separate terminals and start them in the following order.
 ### Terminal A — GelSight cameras
 
 ```bash
-cd ~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+cd ~/lerobot_trossen/UMI-gripper/UMI_ws
 source build.sh
 source gelsight.sh
 ```
@@ -103,7 +103,7 @@ source gelsight.sh
 ### Terminal B — MMS101 force/torque sensors
 
 ```bash
-cd ~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+cd ~/lerobot_trossen/UMI-gripper/UMI_ws
 source build.sh
 source force_sensor.sh
 ```
@@ -111,7 +111,7 @@ source force_sensor.sh
 ### Terminal C — rolling-window XGBoost inference
 
 ```bash
-cd ~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+cd ~/lerobot_trossen/UMI-gripper/UMI_ws
 ./realtime_force_state.sh
 ```
 
@@ -158,7 +158,7 @@ the `test` command fails.
 ### Terminal E — optional raw UMI sensor recording
 
 ```bash
-cd ~/lerobot_trossen/UMI-gripper-yue/UMI_ws
+cd ~/lerobot_trossen/UMI-gripper/UMI_ws
 
 OBJECT_NAME=soft_ball2
 TRIAL_NUMBER=01
