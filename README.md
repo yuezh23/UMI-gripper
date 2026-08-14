@@ -1,6 +1,6 @@
 # UMI Gripper Real-Time Force Feedback
 
-This version extends the offline XGBoost pipeline in [README.md](README.md)
+This version extends the offline XGBoost pipeline in [README.md](https://github.com/yuezh23/UMI-gripper/blob/main/README.md)
 with real-time ROS 2 inference and right-gripper force feedback for a Trossen
 leader/follower system.
 
