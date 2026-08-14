@@ -17,7 +17,7 @@ evaluation so that recordings from one episode cannot leak across splits.
 
 > This README covers data collection and offline model training only. For
 > real-time inference and Trossen-arm integration, see
-> [README_REALTIME.md](https://github.com/yuezh23/UMI-gripper/realtime-force-state/README.md).
+> [README.md](https://github.com/yuezh23/UMI-gripper/tree/realtime-force-state#umi-gripper-real-time-force-feedback).
 
 ## Repository layout
 
